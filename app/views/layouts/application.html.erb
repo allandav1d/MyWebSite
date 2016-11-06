@@ -8,6 +8,28 @@
 </head>
 <body>
 
+<div id="sidebar">
+	<div id="logo">
+		<%=	link_to root_path do %>
+		<%= image_tag "logo.svg" %>
+		<% end %>
+	</div>
+
+	<ul>
+		<li class="category">Website</li>
+		<li><%= link_to "Blog", root_path %></li>
+		<li>About</li>
+	</ul>
+
+	<ul>
+		<li class="category">Social</li>
+		<li><a href="google.com">Twitter</a></li>
+		<li><a href="https://www.instagram.com/AllanDav1d/">Instagram</a></li>
+		<li><a href="https://github.com/allandav1d/">Github</a></li>
+		<li><a href="mailto:allan.j.k@hotmail.com">E-mail</a></li>
+	</ul>
+</div>
+
 <%= yield %>
 
 </body>
